@@ -1,9 +1,9 @@
 const { translatePath } = require('./translate')
 const { createMacro } = require('babel-plugin-macros')
 
-function taggedTranslationsMacro({ references, config }) {
+function taggedTranslationsMacro({ references, config, babel: { types } }) {
   references.default.forEach(({ parentPath: path }) => {
-    translatePath(path, config)
+    translatePath(path, config, types)
   })
 }
 

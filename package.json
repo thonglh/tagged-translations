@@ -30,6 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.4.0",
     "format": "prettier --write 'src/**/*.js'",
     "jest": "^22.0.6",
